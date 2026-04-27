@@ -9,12 +9,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <meta name="description" content="Wajiha Anjum - Data & Business Analyst portfolio. Expert in SQL, Python, Power BI, and data-driven insights.">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body>
+
+    <!-- PAGE LOADER -->
+    <div class="page-loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">WA<span>.</span></div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BACKGROUND PARTICLES -->
+    <div id="particles-js"></div>
 
     <!-- Header Navigation -->
     <header>
@@ -27,10 +46,21 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#fyp">FYP</a></li>
                 <li><a href="#education">Education</a></li>
+                <li><a href="resume.html" target="_blank">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <a href="resume.html" target="_blank" class="btn-primary">View Resume</a>
+        <button class="btn-primary header-cta-btn" id="work-with-me-btn" aria-label="Open Work With Me form">
+            <i class="fas fa-handshake"></i> Work With Me
+        </button>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
     </header>
+    <!-- Mobile menu overlay -->
+    <div class="mobile-menu-overlay" id="mobile-overlay"></div>
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
@@ -44,12 +74,12 @@
             </p>
             <div class="hero-cta">
                 <a href="#projects" class="btn-primary">View Projects</a>
-                <a href="resume.html" target="_blank" class="btn-secondary">View Professional Resume</a>
+                <a href="#contact" class="btn-secondary">Contact Me</a>
             </div>
             <div class="contact-badges">
                 <a href="mailto:wajihaanjum1122@gmail.com" class="badge" title="Email"><i class="fas fa-envelope"></i>
                     wajihaanjum1122@gmail.com</a>
-                <a href="https://www.linkedin.com/in/wajiha-a-321612302/" target="_blank" class="badge"
+                <a href="https://www.linkedin.com/in/wajiha-a-321612380/" target="_blank" class="badge"
                     title="LinkedIn"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
                 <span class="badge" title="Phone"><i class="fas fa-phone"></i> +92 3325529101</span>
                 <span class="badge" title="Location"><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan</span>
@@ -57,7 +87,7 @@
         </div>
         <div class="hero-graphics">
             <div class="profile-pic-container">
-                <img src="assets/profile.jpg" alt="Wajiha Anjum" class="profile-pic">
+                <img src="assets/profile_new.jpg" alt="Wajiha Anjum" class="profile-pic">
                 <div class="profile-glow"></div>
             </div>
             <div class="data-orb"></div>
@@ -166,7 +196,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="projects section-padding fade-in-up" id="projects">
+    <section class="projects section-padding" id="projects">
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid-detailed">
 
@@ -246,6 +276,34 @@
                             for stakeholders to drill down into specific sales regions.</p>
                     </div>
                     <a href="https://github.com/wajiha11khan/PowerBI-sales-dashboard" target="_blank"
+                        class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 4: Social Media Analysis -->
+            <div class="project-detailed-card">
+                <div class="project-image-placeholder">
+                    <img src="assets/projects/proj_sales.png" alt="Social Media Analysis">
+                </div>
+                <div class="project-content">
+                    <div class="project-date">Feb 2026</div>
+                    <h3>Social Media Analysis</h3>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>Social Media</span>
+                    </div>
+                    <div class="project-details">
+                        <p><strong><i class="fas fa-tools"></i> Analysis:</strong> Conducted sentiment analysis and
+                            trend tracking on social media datasets.</p>
+                        <p><strong><i class="fas fa-chart-line"></i> Insights:</strong> Identified key engagement
+                            drivers and audience sentiment patterns.</p>
+                        <p><strong><i class="fas fa-check-circle"></i> Result:</strong> Developed a predictive model to
+                            forecast post performance and audience growth.</p>
+                    </div>
+                    <a href="https://github.com/wajiha11khan/Social-Media-Analysis" target="_blank"
                         class="project-link">
                         <i class="fab fa-github"></i> View on GitHub
                     </a>
@@ -363,6 +421,34 @@
                 </div>
             </div>
 
+            <!-- Project 9: Social Media Sentiment Analysis -->
+            <div class="project-detailed-card">
+                <div class="project-image-placeholder">
+                    <img src="assets/projects/proj_python.png" alt="Social Media Sentiment Analysis">
+                </div>
+                <div class="project-content">
+                    <div class="project-date">Feb 2026</div>
+                    <h3>Social Media Sentiment Analysis</h3>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>Scikit-Learn</span>
+                    </div>
+                    <div class="project-details">
+                        <p><strong><i class="fas fa-tools"></i> Model:</strong> Developed a classification system using
+                            Logistic Regression and Random Forest algorithms.</p>
+                        <p><strong><i class="fas fa-chart-bar"></i> Analysis:</strong> Performed advanced text
+                            preprocessing and feature engineering on social media datasets.</p>
+                        <p><strong><i class="fas fa-check-circle"></i> Result:</strong> Achieved high accuracy in
+                            predicting audience sentiment and engagement patterns.</p>
+                    </div>
+                    <a href="https://github.com/wajiha11khan/Social-Media-Analysis" target="_blank"
+                        class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -468,8 +554,9 @@
                 <div class="cert-grid">
                     <!-- Intro to Cloud Computing (no image) -->
                     <div class="cert-card-img">
-                        <div class="cert-image placeholder-cert">
-                            <i class="fas fa-cloud"></i>
+                        <div class="cert-image">
+                            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=400"
+                                alt="Cloud Computing Certificate">
                         </div>
                         <div class="cert-details">
                             <div class="cert-name">Introduction to Cloud Computing</div>
@@ -514,8 +601,9 @@
                     </div>
                     <!-- Python for Beginners (no image) -->
                     <div class="cert-card-img">
-                        <div class="cert-image placeholder-cert">
-                            <i class="fab fa-python"></i>
+                        <div class="cert-image">
+                            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=400"
+                                alt="Python Certificate">
                         </div>
                         <div class="cert-details">
                             <div class="cert-name">Python for Beginners</div>
@@ -528,24 +616,200 @@
         </div>
     </section>
 
-    <!-- Footer / Contact -->
-    <footer id="contact">
+    <!-- Contact Info Section -->
+    <section class="work-with-me section-padding fade-in-up" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a project in mind? Reach out or click <strong>"Work With Me"</strong> to send a detailed request.</p>
+        <div class="contact-container contact-info-only">
+            <div class="contact-info-side">
+                <h3>Let's collaborate on your next data project.</h3>
+                <p>I'm always open to discussing new opportunities, freelance projects, or just chatting about data
+                    analytics.</p>
+                <div class="contact-methods">
+                    <div class="method">
+                        <i class="fas fa-envelope"></i>
+                        <span>wajihaanjum1122@gmail.com</span>
+                    </div>
+                    <div class="method">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/wajiha-a-321612380" target="_blank">linkedin.com/in/wajiha-anjum</a>
+                    </div>
+                    <div class="method">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/923325529101" target="_blank">+92 3325529101</a>
+                    </div>
+                    <div class="method">
+                        <i class="fas fa-phone"></i>
+                        <span>+92 3325529101</span>
+                    </div>
+                    <div class="method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Islamabad, Pakistan</span>
+                    </div>
+                </div>
+                <div class="contact-availability">
+                    <div class="availability-dot"></div>
+                    <span>Available for freelance & full-time opportunities</span>
+                </div>
+            </div>
+            <div class="contact-cta-side">
+                <div class="cta-card">
+                    <div class="cta-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Ready to Start a Project?</h3>
+                    <p>Click the button below to fill out a detailed project request form. I'll review your requirements and get back to you within 24 hours.</p>
+                    <button class="btn-primary btn-open-modal" id="open-modal-section-btn">
+                        <i class="fas fa-handshake"></i> Work With Me
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK WITH ME MODAL -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <i class="fas fa-handshake modal-title-icon"></i>
+                    <h2>Work With Me</h2>
+                </div>
+                <button class="modal-close" id="modal-close-btn" aria-label="Close form">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="contact-form">
+                    <!-- Name Row -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name <span class="required">*</span></label>
+                            <input type="text" id="first-name" name="first_name" placeholder="First name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name <span class="required">*</span></label>
+                            <input type="text" id="last-name" name="last_name" placeholder="Last name" required>
+                        </div>
+                    </div>
+
+                    <!-- Contact Row -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="+92 300 0000000" required>
+                        </div>
+                    </div>
+
+                    <!-- Service Dropdown -->
+                    <div class="form-group">
+                        <label for="service">What services do you need? <span class="required">*</span></label>
+                        <div class="select-wrapper">
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a service...</option>
+                                <option value="Data Visualization">📊 Data Visualization</option>
+                                <option value="Data Analytics">📈 Data Analytics</option>
+                                <option value="Business Intelligence">💼 Business Intelligence</option>
+                                <option value="Automation">⚙️ Automation</option>
+                                <option value="Machine Learning">🤖 Machine Learning</option>
+                                <option value="Deep Learning">🧠 Deep Learning</option>
+                                <option value="Natural Language Processing">💬 Natural Language Processing (NLP)</option>
+                                <option value="Statistical Analysis">📐 Statistical Analysis</option>
+                                <option value="Data Engineering">🔧 Data Engineering</option>
+                                <option value="Web Scraping & Data Collection">🌐 Web Scraping & Data Collection</option>
+                                <option value="Predictive Modeling">🎯 Predictive Modeling</option>
+                                <option value="Data Cleaning & Preprocessing">🧹 Data Cleaning & Preprocessing</option>
+                                <option value="Dashboard Development">📋 Dashboard Development (Power BI / Tableau)</option>
+                                <option value="Report Generation">📄 Report Generation & Insights</option>
+                                <option value="Others">✏️ Others (Please specify)</option>
+                            </select>
+                            <i class="fas fa-chevron-down select-arrow"></i>
+                        </div>
+                    </div>
+
+                    <!-- Other Service (conditional) -->
+                    <div class="form-group other-service-group" id="other-service-group" style="display: none;">
+                        <label for="other-service">Please specify your service <span class="required">*</span></label>
+                        <input type="text" id="other-service" name="other_service" placeholder="Describe the service you need...">
+                    </div>
+
+                    <!-- Profession -->
+                    <div class="form-group">
+                        <label for="profession">Your Profession <span class="required">*</span></label>
+                        <div class="select-wrapper">
+                            <select id="profession" name="profession" required>
+                                <option value="" disabled selected>Select your profession...</option>
+                                <option value="Student">🎓 Student</option>
+                                <option value="Company/Business">🏢 Company / Business</option>
+                                <option value="Startup">🚀 Startup</option>
+                                <option value="Freelancer">💻 Freelancer</option>
+                                <option value="Researcher/Academic">🔬 Researcher / Academic</option>
+                                <option value="Government/Non-Profit">🏛️ Government / Non-Profit</option>
+                                <option value="Other">📌 Other</option>
+                            </select>
+                            <i class="fas fa-chevron-down select-arrow"></i>
+                        </div>
+                    </div>
+
+                    <!-- Project Details -->
+                    <div class="form-group">
+                        <label for="project-details">Project Details <span class="required">*</span></label>
+                        <textarea id="project-details" name="project_details" rows="5" placeholder="Tell me about your project — goals, timeline, datasets, and any specific requirements..." required></textarea>
+                    </div>
+
+                    <!-- Preferred Communication -->
+                    <div class="form-group">
+                        <label>Preferred Communication Method <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="communication" value="Email" required checked>
+                                <span class="radio-custom"></span>
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="communication" value="WhatsApp">
+                                <span class="radio-custom"></span>
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit" class="btn-primary btn-submit" id="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Request
+                    </button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
         <div class="footer-content">
             <div class="logo">WA<span>.</span></div>
             <p class="cta-text">Open to Data Analyst opportunities. Let's connect.</p>
             <div class="social-links">
                 <a href="mailto:wajihaanjum1122@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/wajiha-a-321612302/" target="_blank" title="LinkedIn"><i
+                <a href="https://www.linkedin.com/in/wajiha-a-321612380" target="_blank" title="LinkedIn"><i
                         class="fab fa-linkedin-in"></i></a>
-            </div>
-            <div class="footer-actions">
-                <a href="resume.html" target="_blank" class="btn-primary"><i class="fas fa-magic"></i> View Resume</a>
             </div>
             <p class="copyright">&copy; 2024 Wajiha Anjum. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/923325529101" class="floating-whatsapp" target="_blank" aria-label="Message on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with me</span>
+    </a>
+
     <script src="script.js"></script>
+    <script src="form-handler.js"></script>
 </body>
 
 </html>
