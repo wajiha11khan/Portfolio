@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wajiha Anjum - Data & Business Analyst</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <meta name="description" content="Wajiha Anjum - Data & Business Analyst portfolio. Expert in SQL, Python, Power BI, and data-driven insights.">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+    <!-- PAGE LOADER -->
+    <div class="page-loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">WA<span>.</span></div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BACKGROUND PARTICLES -->
+    <div id="particles-js"></div>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">WA<span>.</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#fyp">FYP</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="resume.html" target="_blank">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="btn-primary header-cta-btn" id="work-with-me-btn" aria-label="Open Work With Me form">
+            <i class="fas fa-handshake"></i> Work With Me
+        </button>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </header>
+    <!-- Mobile menu overlay -->
+    <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content fade-in-up">
+            <p class="greeting">Hello, I'm</p>
+            <h1 class="glitch" data-text="Wajiha Anjum">Wajiha Anjum</h1>
+            <h2 class="roles">Business Analyst <span class="divider">|</span> Data Analyst</h2>
+            <p class="summary">
+                Data Analyst skilled in SQL, Excel, and Power BI, focused on transforming raw data into actionable
+                insights and business decisions.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-secondary">Contact Me</a>
+            </div>
+            <div class="contact-badges">
+                <a href="mailto:wajihaanjum1122@gmail.com" class="badge" title="Email"><i class="fas fa-envelope"></i>
+                    wajihaanjum1122@gmail.com</a>
+                <a href="https://www.linkedin.com/in/wajiha-a-321612380/" target="_blank" class="badge"
+                    title="LinkedIn"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                <span class="badge" title="Phone"><i class="fas fa-phone"></i> +92 3325529101</span>
+                <span class="badge" title="Location"><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan</span>
+            </div>
+        </div>
+        <div class="hero-graphics">
+            <div class="profile-pic-container">
+                <img src="assets/profile_new.jpg" alt="Wajiha Anjum" class="profile-pic">
+                <div class="profile-glow"></div>
+            </div>
+            <div class="data-orb"></div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills fade-in-up section-padding" id="skills">
+        <h2 class="section-title">Technical Skills & Tools</h2>
+        <div class="skills-categories-grid">
+            <div class="skill-category-card">
+                <div class="category-header">
+                    <i class="fas fa-code"></i>
+                    <h3>Technical Skills</h3>
+                </div>
+                <div class="skill-tags">
+                    <span><i class="fas fa-database"></i> SQL</span>
+                    <span><i class="fab fa-python"></i> Python</span>
+                    <span><i class="fas fa-file-excel"></i> Excel</span>
+                    <span><i class="fas fa-chart-line"></i> R Programming</span>
+                </div>
+            </div>
+            <div class="skill-category-card">
+                <div class="category-header">
+                    <i class="fas fa-tools"></i>
+                    <h3>Tools</h3>
+                </div>
+                <div class="skill-tags">
+                    <span><i class="fas fa-chart-pie"></i> Power BI</span>
+                    <span><i class="fas fa-chart-bar"></i> Tableau</span>
+                </div>
+            </div>
+            <div class="skill-category-card">
+                <div class="category-header">
+                    <i class="fas fa-brain"></i>
+                    <h3>Concepts</h3>
+                </div>
+                <div class="skill-tags">
+                    <span>Data Cleaning</span>
+                    <span>Data Visualization</span>
+                    <span>Exploratory Data Analysis (EDA)</span>
+                    <span>Predictive Modeling</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements / Impact Section -->
+    <section class="achievements section-padding fade-in-up" id="achievements">
+        <h2 class="section-title">Achievements & Impact</h2>
+        <div class="achievements-list">
+            <div class="achievement-item">
+                <div class="achievement-icon"><i class="fas fa-bullseye"></i></div>
+                <p>Processed and analyzed datasets containing over <strong>100,000+ rows</strong> using SQL and Python
+                    to uncover operational inefficiencies.</p>
+            </div>
+            <div class="achievement-item">
+                <div class="achievement-icon"><i class="fas fa-rocket"></i></div>
+                <p>Developed dynamic Power BI dashboards that reduced reporting time by <strong>30%</strong>, providing
+                    stakeholders with real-time insights.</p>
+            </div>
+            <div class="achievement-item">
+                <div class="achievement-icon"><i class="fas fa-chart-line"></i></div>
+                <p>Cleaned complex time-series data and identified key trends leading to a more accurate pricing
+                    prediction model.</p>
+            </div>
+            <div class="achievement-item">
+                <div class="achievement-icon"><i class="fas fa-check-circle"></i></div>
+                <p>Automated data entry workflows using Excel VBA, improving overall efficiency and minimizing manual
+                    data handling errors.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section-padding fade-in-up" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3 class="job-title">Data Analyst Intern</h3>
+                    <h4 class="company">Workers Welfare Fund</h4>
+                    <p class="job-desc">
+                        Gained hands-on experience in cleaning, analyzing, and visualizing large datasets. Delivered
+                        actionable insights through dashboards and reports to support data-driven decision-making and
+                        improve organizational performance.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3 class="job-title">Data Analyst Intern</h3>
+                    <h4 class="company">iSeeWaves Cyber Security</h4>
+                    <p class="job-desc">
+                        &bull; Collected and analyzed freelance marketplace data (Upwork, Fiverr) using Python to study
+                        cybersecurity service demand and pricing trends.<br><br>
+                        &bull; Developed Power BI dashboards and market intelligence reports to identify high-demand
+                        opportunities and support strategic go-to-market decisions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section-padding" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid-detailed">
+
+            <!-- Project 1: RapidMiner -->
+            <div class="project-detailed-card">
+                <div class="project-image-placeholder">
+                    <img src="assets/projects/proj_ml.png" alt="Student Performance Insights">
+                </div>
+                <div class="project-content">
+                    <div class="project-date">Jun 2025</div>
+                    <h3>Student Performance Insights</h3>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>EDA</span>
+                        <span>Data Viz</span>
+                    </div>
+                    <div class="project-details">
+                        <p><strong><i class="fas fa-tools"></i> Focus:</strong> Analyzed key demographic and academic
+                            factors influencing student performance.</p>
+                        <p><strong><i class="fas fa-chart-bar"></i> Analysis:</strong> Performed rigorous Exploratory
+                            Data Analysis (EDA) and established statistical correlations.</p>
+                        <p><strong><i class="fas fa-check-circle"></i> Impact:</strong> Uncovered actionable trends to
+                            help predict and improve overall educational outcomes.</p>
+                    </div>
+                    <a href="https://github.com/wajiha11khan/insights" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2: Python Analysis -->
+            <div class="project-detailed-card">
+                <div class="project-image-placeholder">
+                    <img src="assets/projects/proj_python.png" alt="Python Data Analysis">
+                </div>
+                <div class="project-content">
+                    <div class="project-date">Feb 2025</div>
+                    <h3>Python Data Analysis</h3>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                    </div>
+                    <div class="project-details">
+                        <p><strong><i class="fas fa-tools"></i> Cleaning:</strong> Rigorous data cleaning by fixing
+                            missing values, duplicates, and outliers.</p>
+                        <p><strong><i class="fas fa-chart-line"></i> EDA:</strong> Used Pandas and NumPy for deep
+                            Exploratory Data Analysis (EDA) and automation.</p>
+                        <p><strong><i class="fas fa-check-circle"></i> Result:</strong> Transformed raw datasets into
+                            clean formats ready for high-level business intelligence.</p>
+                    </div>
+                    <a href="https://github.com/wajiha11khan/Student-score-analysis/blob/main/retail_sales.ipynb"
+                        target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3: Power BI -->
+            <div class="project-detailed-card">
+                <div class="project-image-placeholder">
+                    <img src="assets/projects/proj_dashboard.png" alt="Power BI Dashboard">
+                </div>
+                <div class="project-content">
+                    <div class="project-date">Sep 2024</div>
+                    <h3>Sales Dashboard using Power BI</h3>
+                    <div class="project-tags">
+                        <span>Power BI</span>
+                        <span>DAX</span>
+                    </div>
+                    <div class="project-details">
+                        <p><strong><i class="fas fa-tools"></i> Design:</strong> Built a dynamic Power BI dashboard to
+                            track regional sales performance.</p>
+                        <p><strong><i class="fas fa-database"></i> Logic:</strong> Utilized DAX and advanced visuals for
+                            deep insights and KPIs.</p>
+                        <p><strong><i class="fas fa-check-circle"></i> Feature:</strong> Enabled interactive filtering
+                            for stakeholders to drill down into specific sales regions.</p>
+                    </div>
+                    <a href="https://github.com/wajiha11khan/PowerBI-sales-dashboard" target="_blank"
+                        class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 4: Social Media Analysis -->
+            <div class="project-detailed-card">
+                <div class="project-image-placeholder">
+                    <img src="assets/projects/proj_sales.png" alt="Social Media Analysis">
+                </div>
+                <div class="project-content">
+                    <div class="project-date">Feb 2026</div>
+                    <h3>Social Media Analysis</h3>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>Social Media</span>
+                    </div>
+                    <div class="project-details">
+                        <p><strong><i class="fas fa-tools"></i> Analysis:</strong> Conducted sentiment analysis and
+                            trend tracking on social media datasets.</p>
+                        <p><strong><i class="fas fa-chart-line"></i> Insights:</strong> Identified key engagement
+                            drivers and audience sentiment patterns.</p>
+                        <p><strong><i class="fas fa-check-circle"></i> Result:</strong> Developed a predictive model to
+                            forecast post performance and audience growth.</p>
+                    </div>
+                    <a href="https://github.com/wajiha11khan/Social-Media-Analysis" target="_blank"
+                        class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+
+
+            <!-- Project 5: Student Performance Dashboard -->
+            <div class="project-detailed-card">
+                <div class="project-image-placeholder">
+                    <img src="assets/projects/proj_sales.png" alt="Student Performance Dashboard">
+                </div>
+                <div class="project-content">
+                    <div class="project-date">Dec 2024</div>
+                    <h3>Student Performance Dashboard</h3>
+                    <div class="project-tags">
+                        <span>Power BI</span>
+                        <span>Education Data</span>
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="project-details">
+                        <p><strong><i class="fas fa-tools"></i> Design:</strong> Designed a comprehensive Power BI
+                            dashboard to visualize and track key student performance metrics.</p>
+                        <p><strong><i class="fas fa-chart-line"></i> Analysis:</strong> Aggregated educational data to
+                            evaluate demographic impacts, test scores, and learning outcomes.</p>
+                        <p><strong><i class="fas fa-check-circle"></i> Impact:</strong> Empowered educators to monitor
+                            success rates and identify critical areas for academic intervention.</p>
+                    </div>
+                    <a href="https://github.com/wajiha11khan/Student-Performance-Analysis" target="_blank"
+                        class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 6: Excel Analysis -->
+            <div class="project-detailed-card">
+                <div class="project-image-placeholder">
+                    <img src="assets/projects/proj_excel.png" alt="Excel Analysis">
+                </div>
+                <div class="project-content">
+                    <div class="project-date">April 2024</div>
+                    <h3>Advanced Excel Analysis (Superstore)</h3>
+                    <div class="project-tags">
+                        <span>Excel</span>
+                        <span>Pivot Tables</span>
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="project-details">
+                        <p><strong><i class="fas fa-tools"></i> Dashboard:</strong> Developed a comprehensive,
+                            interactive business dashboard directly within Excel.</p>
+                        <p><strong><i class="fas fa-table"></i> Analysis:</strong> Leveraged advanced Pivot Tables and
+                            Power Query to process and visualize Superstore sales data.</p>
+                        <p><strong><i class="fas fa-check-circle"></i> Efficiency:</strong> Streamlined data workflows
+                            to provide real-time insights into profitability and regional performance.</p>
+                    </div>
+                    <a href="https://github.com/wajiha11khan/Superstore" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 7: Market Data Visualization -->
+            <div class="project-detailed-card">
+                <div class="project-image-placeholder">
+                    <img src="assets/projects/proj_market.png" alt="Market Data Visualization">
+                </div>
+                <div class="project-content">
+                    <div class="project-date">Oct 2024</div>
+                    <h3>Market Data Visualization</h3>
+                    <div class="project-tags">
+                        <span>Power BI</span>
+                        <span>Market Analysis</span>
+                        <span>DAX</span>
+                    </div>
+                    <div class="project-details">
+                        <p><strong><i class="fas fa-tools"></i> Focus:</strong> Developed a comprehensive market
+                            intelligence report using Power BI.</p>
+                        <p><strong><i class="fas fa-database"></i> Logic:</strong> Applied advanced DAX calculations to
+                            visualize complex market trends and competitive landscapes.</p>
+                        <p><strong><i class="fas fa-check-circle"></i> Impact:</strong> Provided stakeholders with deep
+                            insights to drive strategic project selection and business growth.</p>
+                    </div>
+                    <a href="https://github.com/wajiha11khan/Market.Analysis" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 8: Sales Dashboard -->
+            <div class="project-detailed-card">
+                <div class="project-image-placeholder">
+                    <img src="assets/projects/proj_dashboard.png" alt="Interactive Sales Dashboard">
+                </div>
+                <div class="project-content">
+                    <div class="project-date">Nov 2024</div>
+                    <h3>Interactive Sales Dashboard</h3>
+                    <div class="project-tags">
+                        <span>Power BI</span>
+                        <span>Data Analytics</span>
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="project-details">
+                        <p><strong><i class="fas fa-tools"></i> Design:</strong> Developed an interactive Power BI
+                            dashboard for comprehensive sales performance tracking.</p>
+                        <p><strong><i class="fas fa-chart-line"></i> Analysis:</strong> Integrated extensive business
+                            data to design robust KPIs and measure revenue growth.</p>
+                        <p><strong><i class="fas fa-check-circle"></i> Impact:</strong> Facilitated rapid data-driven
+                            decisions by identifying top-performing regions and optimizing sales strategies.</p>
+                    </div>
+                    <a href="https://github.com/wajiha11khan/Sales-dashboard" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 9: Social Media Sentiment Analysis -->
+            <div class="project-detailed-card">
+                <div class="project-image-placeholder">
+                    <img src="assets/projects/proj_python.png" alt="Social Media Sentiment Analysis">
+                </div>
+                <div class="project-content">
+                    <div class="project-date">Feb 2026</div>
+                    <h3>Social Media Sentiment Analysis</h3>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>Scikit-Learn</span>
+                    </div>
+                    <div class="project-details">
+                        <p><strong><i class="fas fa-tools"></i> Model:</strong> Developed a classification system using
+                            Logistic Regression and Random Forest algorithms.</p>
+                        <p><strong><i class="fas fa-chart-bar"></i> Analysis:</strong> Performed advanced text
+                            preprocessing and feature engineering on social media datasets.</p>
+                        <p><strong><i class="fas fa-check-circle"></i> Result:</strong> Achieved high accuracy in
+                            predicting audience sentiment and engagement patterns.</p>
+                    </div>
+                    <a href="https://github.com/wajiha11khan/Social-Media-Analysis" target="_blank"
+                        class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Final Year Project Section -->
+    <section class="fyp section-padding fade-in-up" id="fyp">
+        <h2 class="section-title">Final Year Project</h2>
+        <div class="fyp-container">
+            <div class="fyp-header">
+                <div class="fyp-title-group">
+                    <h3>Petrol Price Prediction via USD Exchange Rates</h3>
+                    <a href="https://github.com/wajiha11khan/Final-year-project" target="_blank"
+                        class="fyp-github-link">
+                        <i class="fab fa-github"></i> View Repository
+                    </a>
+                </div>
+                <span class="fyp-date">2025 - 2026</span>
+            </div>
+
+            <div class="fyp-content">
+                <div class="fyp-block">
+                    <h4><i class="fas fa-info-circle"></i> Introduction</h4>
+                    <p>A predictive modeling project focused on forecasting future petrol prices by analyzing the
+                        historical relationship between global petroleum trends and the USD exchange rate.</p>
+                </div>
+
+                <div class="fyp-block">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Problem Statement</h4>
+                    <p>Fluctuations in the USD exchange rate significantly impact domestic petrol prices, causing
+                        uncertainty and budget challenges for businesses and consumers who rely on transportation.</p>
+                </div>
+
+                <div class="fyp-block">
+                    <h4><i class="fas fa-bullseye"></i> Objectives</h4>
+                    <ul>
+                        <li>Develop a machine learning regression model to predict petrol prices based on USD rates.
+                        </li>
+                        <li>Analyze the long-term correlation and historical trends between the two variables.</li>
+                        <li>Build an interactive dashboard to visualize price forecasts and historical variations.</li>
+                    </ul>
+                </div>
+
+                <div class="fyp-block">
+                    <h4><i class="fas fa-laptop-code"></i> Technologies Used</h4>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Pandas</span>
+                        <span>Scikit-Learn</span>
+                        <span>SQL</span>
+                        <span>Power BI</span>
+                    </div>
+                </div>
+
+                <div class="fyp-block">
+                    <h4><i class="fas fa-project-diagram"></i> Methodology</h4>
+                    <p>Developed a deep learning–based petrol price forecasting system using <strong>LSTM (Long
+                            Short-Term Memory)</strong> to analyze time-series data. Integrated key economic indicators
+                        including Brent crude oil prices, USD/PKR exchange rate, and petroleum levy to improve
+                        prediction accuracy.</p>
+                </div>
+
+                <div class="fyp-block">
+                    <h4><i class="fas fa-star"></i> Key Features</h4>
+                    <ul>
+                        <li>Applied data preprocessing and normalization (MinMaxScaler) for consistent model
+                            performance.</li>
+                        <li>Designed a multi-layer LSTM model with dropout to prevent overfitting.</li>
+                        <li>Achieved strong predictive performance with <strong>MAE: Rs. 4.25</strong> and <strong>RMSE:
+                                Rs. 5.80</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="fyp-block">
+                    <h4><i class="fas fa-chart-bar"></i> Results</h4>
+                    <p>The predictive model successfully forecasted petrol prices with high accuracy, demonstrating a
+                        strong correlation with the USD exchange rate and providing reliable estimates for future price
+                        adjustments.</p>
+                </div>
+
+                <div class="fyp-block">
+                    <h4><i class="fas fa-check-circle"></i> Conclusion</h4>
+                    <p>This project successfully highlights how data analytics and machine learning can be used to
+                        mitigate economic uncertainty by providing robust, data-driven forecasts for essential
+                        commodities like petrol.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section class="education section-padding fade-in-up" id="education">
+        <div class="edu-cert-container">
+            <div class="education-block">
+                <h2 class="section-title">Education</h2>
+                <div class="edu-card">
+                    <h3>Bachelor of Science in Business Analytics</h3>
+                    <h4 class="institute">International Islamic University Islamabad</h4>
+                    <p class="edu-date">Sep 2022 - June 2026</p>
+                </div>
+            </div>
+            <div class="certifications-block">
+                <h2 class="section-title">Certifications</h2>
+                <div class="cert-grid">
+                    <!-- Intro to Cloud Computing (no image) -->
+                    <div class="cert-card-img">
+                        <div class="cert-image">
+                            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=400"
+                                alt="Cloud Computing Certificate">
+                        </div>
+                        <div class="cert-details">
+                            <div class="cert-name">Introduction to Cloud Computing</div>
+                            <div class="cert-org">Simplilearn</div>
+                            <div class="cert-date">Feb 2023</div>
+                        </div>
+                    </div>
+                    <!-- Intro to Business Analysis (has image) -->
+                    <div class="cert-card-img">
+                        <div class="cert-image">
+                            <img src="assets/certificates/business-analysis.jpg"
+                                alt="Introduction to Business Analysis Certificate">
+                        </div>
+                        <div class="cert-details">
+                            <div class="cert-name">Introduction to Business Analysis</div>
+                            <div class="cert-org">Coursera</div>
+                            <div class="cert-date">Apr 2025</div>
+                        </div>
+                    </div>
+                    <!-- Excel Basics for Data Analysis (has image) -->
+                    <div class="cert-card-img">
+                        <div class="cert-image">
+                            <img src="assets/certificates/excel-basics.jpg"
+                                alt="Excel Basics for Data Analysis Certificate">
+                        </div>
+                        <div class="cert-details">
+                            <div class="cert-name">Excel Basics for Data Analysis</div>
+                            <div class="cert-org">Coursera</div>
+                            <div class="cert-date">Apr 2025</div>
+                        </div>
+                    </div>
+                    <!-- Introduction to SQL (has image) -->
+                    <div class="cert-card-img">
+                        <div class="cert-image">
+                            <img src="assets/certificates/intro-to-sql.jpg" alt="Introduction to SQL Certificate">
+                        </div>
+                        <div class="cert-details">
+                            <div class="cert-name">Introduction to SQL</div>
+                            <div class="cert-org">Simplilearn | Skillup</div>
+                            <div class="cert-date">Aug 2025</div>
+                        </div>
+                    </div>
+                    <!-- Python for Beginners (no image) -->
+                    <div class="cert-card-img">
+                        <div class="cert-image">
+                            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=400"
+                                alt="Python Certificate">
+                        </div>
+                        <div class="cert-details">
+                            <div class="cert-name">Python for Beginners</div>
+                            <div class="cert-org">Simplilearn | Skillup</div>
+                            <div class="cert-date">Sep 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="work-with-me section-padding fade-in-up" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a project in mind? Reach out or click <strong>"Work With Me"</strong> to send a detailed request.</p>
+        <div class="contact-container contact-info-only">
+            <div class="contact-info-side">
+                <h3>Let's collaborate on your next data project.</h3>
+                <p>I'm always open to discussing new opportunities, freelance projects, or just chatting about data
+                    analytics.</p>
+                <div class="contact-methods">
+                    <div class="method">
+                        <i class="fas fa-envelope"></i>
+                        <span>wajihaanjum1122@gmail.com</span>
+                    </div>
+                    <div class="method">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/wajiha-a-321612380" target="_blank">linkedin.com/in/wajiha-anjum</a>
+                    </div>
+                    <div class="method">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/923325529101" target="_blank">+92 3325529101</a>
+                    </div>
+                    <div class="method">
+                        <i class="fas fa-phone"></i>
+                        <span>+92 3325529101</span>
+                    </div>
+                    <div class="method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Islamabad, Pakistan</span>
+                    </div>
+                </div>
+                <div class="contact-availability">
+                    <div class="availability-dot"></div>
+                    <span>Available for freelance & full-time opportunities</span>
+                </div>
+            </div>
+            <div class="contact-cta-side">
+                <div class="cta-card">
+                    <div class="cta-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Ready to Start a Project?</h3>
+                    <p>Click the button below to fill out a detailed project request form. I'll review your requirements and get back to you within 24 hours.</p>
+                    <button class="btn-primary btn-open-modal" id="open-modal-section-btn">
+                        <i class="fas fa-handshake"></i> Work With Me
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK WITH ME MODAL -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <i class="fas fa-handshake modal-title-icon"></i>
+                    <h2>Work With Me</h2>
+                </div>
+                <button class="modal-close" id="modal-close-btn" aria-label="Close form">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="contact-form">
+                    <!-- Name Row -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name <span class="required">*</span></label>
+                            <input type="text" id="first-name" name="first_name" placeholder="First name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name <span class="required">*</span></label>
+                            <input type="text" id="last-name" name="last_name" placeholder="Last name" required>
+                        </div>
+                    </div>
+
+                    <!-- Contact Row -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="+92 300 0000000" required>
+                        </div>
+                    </div>
+
+                    <!-- Service Dropdown -->
+                    <div class="form-group">
+                        <label for="service">What services do you need? <span class="required">*</span></label>
+                        <div class="select-wrapper">
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a service...</option>
+                                <option value="Data Visualization">📊 Data Visualization</option>
+                                <option value="Data Analytics">📈 Data Analytics</option>
+                                <option value="Business Intelligence">💼 Business Intelligence</option>
+                                <option value="Automation">⚙️ Automation</option>
+                                <option value="Machine Learning">🤖 Machine Learning</option>
+                                <option value="Deep Learning">🧠 Deep Learning</option>
+                                <option value="Natural Language Processing">💬 Natural Language Processing (NLP)</option>
+                                <option value="Statistical Analysis">📐 Statistical Analysis</option>
+                                <option value="Data Engineering">🔧 Data Engineering</option>
+                                <option value="Web Scraping & Data Collection">🌐 Web Scraping & Data Collection</option>
+                                <option value="Predictive Modeling">🎯 Predictive Modeling</option>
+                                <option value="Data Cleaning & Preprocessing">🧹 Data Cleaning & Preprocessing</option>
+                                <option value="Dashboard Development">📋 Dashboard Development (Power BI / Tableau)</option>
+                                <option value="Report Generation">📄 Report Generation & Insights</option>
+                                <option value="Others">✏️ Others (Please specify)</option>
+                            </select>
+                            <i class="fas fa-chevron-down select-arrow"></i>
+                        </div>
+                    </div>
+
+                    <!-- Other Service (conditional) -->
+                    <div class="form-group other-service-group" id="other-service-group" style="display: none;">
+                        <label for="other-service">Please specify your service <span class="required">*</span></label>
+                        <input type="text" id="other-service" name="other_service" placeholder="Describe the service you need...">
+                    </div>
+
+                    <!-- Profession -->
+                    <div class="form-group">
+                        <label for="profession">Your Profession <span class="required">*</span></label>
+                        <div class="select-wrapper">
+                            <select id="profession" name="profession" required>
+                                <option value="" disabled selected>Select your profession...</option>
+                                <option value="Student">🎓 Student</option>
+                                <option value="Company/Business">🏢 Company / Business</option>
+                                <option value="Startup">🚀 Startup</option>
+                                <option value="Freelancer">💻 Freelancer</option>
+                                <option value="Researcher/Academic">🔬 Researcher / Academic</option>
+                                <option value="Government/Non-Profit">🏛️ Government / Non-Profit</option>
+                                <option value="Other">📌 Other</option>
+                            </select>
+                            <i class="fas fa-chevron-down select-arrow"></i>
+                        </div>
+                    </div>
+
+                    <!-- Project Details -->
+                    <div class="form-group">
+                        <label for="project-details">Project Details <span class="required">*</span></label>
+                        <textarea id="project-details" name="project_details" rows="5" placeholder="Tell me about your project — goals, timeline, datasets, and any specific requirements..." required></textarea>
+                    </div>
+
+                    <!-- Preferred Communication -->
+                    <div class="form-group">
+                        <label>Preferred Communication Method <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="communication" value="Email" required checked>
+                                <span class="radio-custom"></span>
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="communication" value="WhatsApp">
+                                <span class="radio-custom"></span>
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit" class="btn-primary btn-submit" id="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Request
+                    </button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="logo">WA<span>.</span></div>
+            <p class="cta-text">Open to Data Analyst opportunities. Let's connect.</p>
+            <div class="social-links">
+                <a href="mailto:wajihaanjum1122@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/wajiha-a-321612380" target="_blank" title="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="copyright">&copy; 2024 Wajiha Anjum. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/923325529101" class="floating-whatsapp" target="_blank" aria-label="Message on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with me</span>
+    </a>
+
+    <script src="script.js"></script>
+    <script src="form-handler.js"></script>
+</body>
+
+</html>
