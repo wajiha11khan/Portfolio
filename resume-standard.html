@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wajiha Anjum - Standard Professional Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif; /* Traditional professional font */
+            background-color: #f3f4f6;
+            color: #111;
+            padding: 40px 20px;
+        }
+
+        .resume-page {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 24pt;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .contact-info {
+            font-size: 10pt;
+            margin-top: 5px;
+        }
+
+        .section-title {
+            font-size: 14pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ccc;
+            margin: 20px 0 10px;
+            padding-bottom: 2px;
+        }
+
+        .summary {
+            font-size: 11pt;
+            text-align: justify;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            font-size: 11pt;
+        }
+
+        .experience-item, .project-item {
+            margin-bottom: 15px;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 12pt;
+        }
+
+        .sub-header {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            font-size: 11pt;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+            font-size: 10.5pt;
+        }
+
+        li {
+            margin-bottom: 3px;
+        }
+
+        .education-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11pt;
+        }
+
+        .print-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media print {
+            body { background: none; padding: 0; }
+            .resume-page { box-shadow: none; max-width: 100%; margin: 0; padding: 20px; }
+            .print-btn { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">Print Resume</button>
+
+    <div class="resume-page">
+        <header class="header">
+            <h1>Wajiha Anjum</h1>
+            <div class="contact-info">
+                wajihaanjum1122@gmail.com | +92 3325529101 | <a href="https://www.linkedin.com/in/wajiha-a-321612302/" target="_blank">linkedin.com/in/wajiha-a-321612302</a><br>
+                Islamabad, Pakistan
+            </div>
+        </header>
+
+        <section>
+            <h2 class="section-title">Professional Summary</h2>
+            <p class="summary">
+                Data Analyst skilled in Python, SQL and Excel. Experienced in cleaning data, exploring trends, and building dashboards (Power BI, Tableau). Passionate about turning data into clear insights to support strategic business decisions.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div><strong>Python:</strong> Pandas, NumPy, SciPy, Matplotlib</div>
+                <div><strong>SQL:</strong> SQLite, MySQL</div>
+                <div><strong>Visualization:</strong> Power BI, Tableau</div>
+                <div><strong>Excel:</strong> Pivot Tables, VBA, VLOOKUP</div>
+                <div><strong>Other:</strong> R Programming, RapidMiner</div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Work Experience</h2>
+            
+            <div class="experience-item">
+                <div class="exp-header">
+                    <span>Data Analyst Intern</span>
+                    <span>Workers Welfare Fund</span>
+                </div>
+                <ul>
+                    <li>Cleaned, analyzed, and visualized large organizational datasets to generate actionable insights.</li>
+                    <li>Built dashboards and analytical reports that supported data-driven decision-making and improved operational performance.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header">
+                    <span>Data Analyst Intern</span>
+                    <span>iSeeWaves Cyber Security</span>
+                </div>
+                <ul>
+                    <li>Collected and analyzed freelance marketplace data (Upwork, Fiverr) using Python to study cybersecurity service demand and pricing trends.</li>
+                    <li>Developed Power BI dashboards and market intelligence reports to identify high-demand opportunities and support strategic go-to-market decisions.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Key Projects</h2>
+            
+            <div class="project-item">
+                <div class="sub-header">
+                    <span>RapidMiner Data Analysis</span>
+                    <span>Jun 2025</span>
+                </div>
+                <ul>
+                    <li>Performed EDA and built ML models (Decision Tree, Naive Bayes, KNN).</li>
+                    <li>Applied sentiment analysis and text mining to unstructured data.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="sub-header">
+                    <span>Python Data Analysis</span>
+                    <span>Feb 2025</span>
+                </div>
+                <ul>
+                    <li>Cleaned data by fixing missing values, duplicates, and outliers.</li>
+                    <li>Used Python (pandas, NumPy, matplotlib) for EDA and automation.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="sub-header">
+                    <span>Sales Dashboard using Power BI</span>
+                    <span>Sep 2024</span>
+                </div>
+                <ul>
+                    <li>Built a dynamic Power BI dashboard to track sales across regions.</li>
+                    <li>Used DAX and visuals for insights, KPIs, and interactive filtering.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="sub-header">
+                    <span>Social Media Sentiment Analysis</span>
+                    <span>Feb 2026</span>
+                </div>
+                <ul>
+                    <li>Built a classification system using Logistic Regression and Random Forest models.</li>
+                    <li>Predicted audience sentiment and engagement patterns from social media data using Python.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Final Year Project</h2>
+            <div class="experience-item">
+                <div class="exp-header">
+                    <span>Petrol Price Prediction System via LSTM</span>
+                    <span>2025 – 2026</span>
+                </div>
+                <ul>
+                    <li>Developed a deep learning–based petrol price forecasting system using <strong>LSTM</strong> (Long Short-Term Memory) to analyze time-series data.</li>
+                    <li>Integrated key economic indicators including Brent crude oil prices, USD/PKR exchange rate, and petroleum levy to improve prediction accuracy.</li>
+                    <li>Applied data preprocessing and normalization (MinMaxScaler) to ensure consistent model performance across features.</li>
+                    <li>Designed a multi-layer LSTM model with dropout to prevent overfitting and enhance generalization.</li>
+                    <li>Achieved strong predictive performance with <strong>MAE: Rs. 4.25</strong> and <strong>RMSE: Rs. 5.80</strong>, ensuring reliable forecasting.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <span><strong>Bachelor of Science in Business Analytics</strong></span>
+                <span>Sep 2022 - June 2026</span>
+            </div>
+            <div style="font-size: 11pt;">International Islamic University Islamabad</div>
+        </section>
+
+    </div>
+</body>
+</html>
